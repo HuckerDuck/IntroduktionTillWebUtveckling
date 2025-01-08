@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> <b>Mina andra sidor</b></h2>
+    <a href="Index.html">HuvudSidan</a>
+    <a href="Den andra sidan.html">Den andra sidan</a>
+    <a href="Den trejde sidan.html">Den tredje sidan</a>
+    
+    <section>
+        <h1>Länk med telefon nummer</h1>
+        <a href="tel:076 097 63 60">Telefon</a>'
+
+        <h2>Länk med e-postadress</h2>
+        <a href="mailto:frmb1@hotmail.com">Vid problem maila adminstration</a>
+    </section>
+
+    <section>
+        <h3>Kontaktformulär</h3>
+
+        <!-- Form används för att skapa formuläret -->
+         <!-- Action anger vart data ska skickas -->
+          <!-- I detta fall kommer det att skickas som en HTTP POST-förfrågan  -->
+        <form action="/submit-form" method="post">
+            <label for="name">Namn</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+        </form>
+    </section>
+</body>
+</html>
