@@ -1,0 +1,69 @@
+body{
+    /* 
+    För att sätta en bakgrundsbild som automatiskt tänker
+    hela fönstret 
+
+    background-image: url(background.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    
+    */
+    
+    /* Marginalen är rummet mellan boxen och den lilla utrymmet till vänster */
+    margin: 0 px; 
+
+
+    
+}
+h1{
+    background: linear-gradient(to right, blue,white);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+p{
+    background: linear-gradient(to left, blue, white);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#box1{
+    border: 5px solid; 
+    width: 250px;
+    height: 250px;
+
+    /* Padding å andra sidan är de svarta sträcken runt varje box */
+    padding: 25px; 
+
+    font-size: 22px; 
+
+    /* Denna marginal på botten kommer att skapa ett mellanrum mellan boxarna */
+    margin-bottom: 25px;
+
+    /* Margin-left kommer att pusha föremålet 200 pixlar till höger då marginalen ligger vänster
+    om boxen */
+    margin-left: 200px;
+    background: yellow
+
+    
+
+}
+
+#box2{
+    border: 5px solid; 
+    width: 250px;
+    height: 250px;
+
+    margin-bottom: 25px;
+    margin-left: 200px;
+
+
+    padding: 25px; 
+
+    font-size: 22px; 
+    background: red
+
+}
+
