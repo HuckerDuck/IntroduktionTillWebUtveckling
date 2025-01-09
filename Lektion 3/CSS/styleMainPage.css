@@ -1,0 +1,203 @@
+/* <!-- STYLE CSS --> */
+
+*  {
+    margin: 0; 
+    padding: 0;
+}
+
+
+/**========================================================================
+ *                       HuvudKroppen av hemsidan
+ *========================================================================**/
+/* Kroppen av hemsida */
+/* I detta fall kommer vi att lägga till en länk till en bild  */
+/* Denna kommer att fungera som en bakgrund för hemsidan */
+body{
+    /* Vi börjar med att hämta en länk */
+    background-image: url(https://img.freepik.com/free-vector/elegant-white-wallpaper-with-golden-details_23-2149095007.jpg?semt=ais_hybrid);
+    /* Vi ser till att den täcker hela skärmen */
+    background-size: cover;
+    /* Centerara bilden */
+    background-position: center;
+    /* Gör att bilden i sig inte upprepar sig, kan vara bra om bilden är liten eller så */
+    background-repeat: no-repeat;
+    /* Skapa för marginal och padding */
+    margin: 0;
+    padding: 0;
+
+}
+
+/**========================================================================
+ *                           Header
+ *========================================================================**/
+/* För att komma åt headern */ 
+
+.headerMainPage{
+    
+    background-size: cover;
+    display: flex;
+    /* Sprider ut materialet */
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: beige;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+}
+h1{
+    text-align: center;
+}
+
+/**========================================================================
+ *                           NavigationsMeny
+ *========================================================================**/
+
+
+/* För att komma åt nav classen */
+/* nav.class-nav */
+nav.main-nav{
+    
+    padding: 10 px 20 px; 
+    border-radius: 5 px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+/* Komma åt menyns lista */
+/* nav.class-nav .class */
+
+nav.main-nav .menu{ 
+    /* Ta bort punkterna från listan */
+    list-style: none; 
+    /* Ändra marginalen */
+    margin: 0;
+    /* Ändra padding */
+    padding: 0; 
+    /* Gör listan horisontell */
+    display: flex; 
+    /* Centrera menyobjekten */
+    justify-content: center;
+    /* Skapa ett mellanrum mellan objekten */
+    gap: 20px;
+}
+
+/* För att komma åt själva listan med alla länkar  */
+/* nav.class-nav .class li a */
+
+nav.main-nav .menu li a{
+    /* Ändra färgen på texten */
+    color: gold; 
+    /* Gör stilen fet */
+    font-weight: bold;
+    /* Skapa en inre maginal för alla länkar */
+    padding: 10px 15px;
+    /* Skapa en backgrund färg för länkarna */
+    background-color: black;
+    /* Rundade hörn */
+    border-radius: 4px;
+  
+    
+}
+
+h2{
+    text-align: center;
+    margin: 20px;
+    
+}
+
+
+/**========================================================================
+ *                           InformationText
+ *========================================================================**/
+
+#informationstext{
+    background-color: aliceblue;
+    text-align: center;
+    padding: 10px; 
+    margin: 10px auto;
+    border-radius: 10px;
+    
+    font-family: 'Courier New', Courier, monospace;
+    width: 35%;
+    
+    
+}
+
+/* Texten i informationsrutan */
+/* informationstext p (för själva texten) */
+#informationtext p{
+    /* Ändra textstorleken för att kunna läsa bättre */
+    font-size: 1.2em;
+    /* Öka radavståndet */
+    line-height: 1.6;
+    /* Ändra texten till en mörkare färg */
+    color: black;
+    text-align: center;
+
+}
+
+/**========================================================================
+ *                          ProduktDelen
+ *========================================================================**/
+
+
+.product-section{
+    
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: space-between;
+    
+    padding: 30px;
+    
+}
+
+/* Gemensam styling för varje produkt */
+.product{
+
+    width: 25%; 
+    
+    gap: 5px;
+    /* Texten */
+    text-align: center;
+    /* Border */
+    border: 1px solid black;
+    padding: 10px;
+    
+}
+
+
+
+/*Ändra storleken på själva bilden  */
+.product img {
+    width: 100px;
+    height: 150px;
+      
+}
+
+
+
+
+/**========================================================================
+ *                           Footer
+ *========================================================================**/
+
+footer{
+    margin-top: 100px;
+    /* Gör att footer hamnar längst ner */
+    /* Fast position */
+    
+    /* Placerar den längst ner till vänster */
+    bottom: 0;
+    left: 0;
+    /* Sertill att footern är lika bred som fönstret */
+    width: 100%;
+    /* Lägger till lite utrymme i den */
+    padding: 10 px 0;
+    /* Centrerar texten till mitten */
+    text-align: center;
+    /* Svart text på en beigt bakgrund */
+    color: black;
+    background-color: wheat
+
+}
